@@ -12,19 +12,19 @@ public class Digits
 		int diRemaining = num/10
 		while (diRemaining >0){
 			digitList.add(0, new Integer(num%10))
-			int diRemaining = num/10
+			int diRemaining /=10
 				}
 		
 	}
 
 	public boolean isStrictlyIncreasing()
 	{ /* to be implemented in part (b) */
-		for （int i = 0; i<digitList.size()-1; i++)
+		for （int i = 0; i<digitList.size()-1; i++){
 			if (digitList.get(i)>=digitList.get(i+1){
 			return false;
-	}else{
-		return true;
+		}
 	}
+		return true;
 	}
 	
 	public String toString()
